@@ -4,7 +4,7 @@ import './Home.css';
 import {Container,Card} from 'react-bootstrap';
 import NavBar from '../CommonComp./NavBar';
 import Contact from '../CommonComp./Contact';
-import Image from './man.jpg';
+import Image from '../../images/man.jpg';
 
 const Home = () => {
 
@@ -23,7 +23,7 @@ const Home = () => {
     <Card.Text>Last updated 3 mins ago</Card.Text>
     </Card.ImgOverlay>
     </Card>
-  </Container>
+   </Container>
     <Contact/>
     </div>
   )

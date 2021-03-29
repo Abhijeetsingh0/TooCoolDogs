@@ -1,0 +1,18 @@
+#dist1{
+    padding:30px;
+}
+#dist2{
+    padding:30px;
+    color:'white'
+}
+#dist3{
+    padding:30px;
+} 
+
+.Bottom{
+    margin-top:20px;
+    margin-bottom: 50px;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

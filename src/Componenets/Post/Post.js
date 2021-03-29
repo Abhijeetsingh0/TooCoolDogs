@@ -53,8 +53,8 @@ useEffect(()=>{
                     <Item className="allOverPost"
                           original= {post.mainImage.asset.url}
                           thumbnail={post.mainImage.asset.url}
-                          width="100%add"
-                          height=""
+                          width="1080"
+                          height="1920"
                           title={post.title}
                           >
                           {({ ref, open }) => (
@@ -81,9 +81,6 @@ useEffect(()=>{
                 <Spinner animation="grow" variant="success" />
                 <Spinner animation="grow" variant="danger" />
                 <Spinner animation="grow" variant="primary" />
-                <Spinner animation="grow" variant="secondary" />
-                <Spinner animation="grow" variant="success" />
-                <Spinner animation="grow" variant="danger" />
                 </Container>
                 <Contact/> 
             </div>

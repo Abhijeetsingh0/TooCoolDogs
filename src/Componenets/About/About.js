@@ -1,7 +1,7 @@
 import React,{useEffect , useState} from 'react'
 import "./About.css";
-import NavBar from '../CommonComp./NavBar';
-import Contact from '../CommonComp./Contact';
+import NavBar from '../CommonComp/NavBar';
+import Contact from '../CommonComp/Contact';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Container,Media} from 'react-bootstrap';
 import sanityClient from '../../Client';

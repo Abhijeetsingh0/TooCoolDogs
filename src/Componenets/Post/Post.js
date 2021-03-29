@@ -1,6 +1,6 @@
 import React,{Fragment, useEffect,useState} from 'react'
-import NavBar from '../CommonComp./NavBar';
-import Contact from '../CommonComp./Contact';
+import NavBar from '../CommonComp/NavBar';
+import Contact from '../CommonComp/Contact';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Container,Form,Spinner} from 'react-bootstrap';
 import sanityClient from '../../Client';

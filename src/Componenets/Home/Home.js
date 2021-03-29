@@ -1,9 +1,9 @@
 import React from 'react'
+import NavBar from '../CommonComp/NavBar';
 import 'bootstrap/dist/css/bootstrap.css';
 import './Home.css';
 import {Container,Card} from 'react-bootstrap';
-import NavBar from '../CommonComp./NavBar';
-import Contact from '../CommonComp./Contact';
+import Contact from '../CommonComp/Contact';
 import Image from '../../images/man.jpg';
 
 const Home = () => {

@@ -8,7 +8,6 @@ import './Style.css'
 const NavBar = () => {
     return (
         <div className='Bottom'>
-             <>
             <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="/" id="dist1">
             <Typical
@@ -22,7 +21,6 @@ const NavBar = () => {
             <Nav.Link href="/about" id="dist3" >About</Nav.Link>
             </Nav>
             </Navbar>
-            </>
         </div>
     )
 }

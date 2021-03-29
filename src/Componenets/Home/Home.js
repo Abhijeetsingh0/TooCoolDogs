@@ -13,7 +13,7 @@ const Home = () => {
     <NavBar/>
   <Container>
    <Card className="bg-dark text-white margins" >
-    <Card.Img src={Image} alt="Card image" />
+    <Card.Img style={{height:'300px'}} src={Image} alt="Card image" />
     <Card.ImgOverlay>
     <Card.Title>Hey✋</Card.Title>
     <Card.Text>

@@ -1,0 +1,15 @@
+.normalMarg{
+    margin-top:40px;
+}
+
+.mainT{
+    margin-top: 40px;
+    padding: 20px;
+    background: #d6d8d9
+}
+
+@media screen and (max-width:800px){
+    .normalMarg{
+    margin-top:40px; 
+    }
+}

@@ -1,0 +1,31 @@
+.loading{
+    font-size:large;
+    font-weight:bold;
+    padding-top: 80px;
+    padding-left: 80px;
+}
+.cont{ 
+    margin-left: 68px;
+    width:40%;
+    height:40%;  
+    padding-top:10px;
+    
+}
+
+.allOverPost{
+    margin-left: 20px;
+}
+
+@media screen and (max-width:800px){
+    .cont{
+        margin-left:36px;
+    }
+}
+
+.button_margin{
+margin-top: 50px;
+}
+
+#xxxx{
+    height: 50px;
+}

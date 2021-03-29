@@ -1,0 +1,21 @@
+
+.bwtmarg{
+    padding:30px;
+    size:60px;
+    margin: center;
+    padding: center;
+    font-weight:bold;
+    background-color: #e9ecef;
+}
+
+.margins{
+    margin-top: 70px;
+    margin-top:70px;
+}
+
+@media screen and (max-width:800px){
+    .margins{
+        margin-top: 70px;
+        margin-bottom:70px;
+    }
+}

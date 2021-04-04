@@ -42,7 +42,7 @@ useEffect(()=>{
           },
           alt
       }
-  } | order(publishedAt asc) | [0...${currPostNo}]`).then((data)=>setPost(data))
+  } | order(title desc) | [0...${currPostNo}]`).then((data)=>setPost(data))
   .catch(console.error);
 }, [currPostNo] )
 

@@ -94,7 +94,6 @@ useEffect(()=>{
                 </Container>
                <div className={{height:'40px',marginTop:'30px'}}></div>
                 <Container>
-                  {console.log(postData)}
                 <LazyLoad>
                   {postData.map((post,index)=>(
                   <Fragment key={index} >

@@ -2,11 +2,10 @@ import React,{Fragment, useEffect,useState} from 'react'
 import NavBar from '../CommonComp/NavBar';
 import Contact from '../CommonComp/Contact';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Container,Form,Spinner,Button} from 'react-bootstrap';
+import {Container,Form,Spinner} from 'react-bootstrap';
 import sanityClient from '../../Client';
 import './Post.css';
 import LazyLoad from 'react-lazyload';
-
 import 'photoswipe/dist/photoswipe.css'
 import 'photoswipe/dist/default-skin/default-skin.css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
@@ -16,18 +15,17 @@ const Post = () => {
 
   const [ postData , setPost ] = useState(null);
   const [input , setInput] = useState('');
-  let [currPostNo , setCurrPostNo] = useState(10);
  
-//   function shuffle(sourceArray) {
-//     for (var i = 0; i < sourceArray.length - 1; i++) {
-//         var j = i + Math.floor(Math.random() * (sourceArray.length - i));
+  function shuffle(sourceArray) {
+    for (var i = 0; i < sourceArray.length - 1; i++) {
+        var j = i + Math.floor(Math.random() * (sourceArray.length - i));
 
-//         var temp = sourceArray[j];
-//         sourceArray[j] = sourceArray[i];
-//         sourceArray[i] = temp;
-//     }
-//     return sourceArray;
-// }
+        var temp = sourceArray[j];
+        sourceArray[j] = sourceArray[i];
+        sourceArray[i] = temp;
+    }
+    return sourceArray;
+}
 
 useEffect(()=>{
   sanityClient.fetch(`*[_type=="post"]{
@@ -42,9 +40,9 @@ useEffect(()=>{
           },
           alt
       }
-  } | order(title desc) | [0...${currPostNo}]`).then((data)=>setPost(data))
+  }`).then((data)=>setPost(shuffle(data)))
   .catch(console.error);
-}, [currPostNo] )
+}, [] )
 
     const singlePost = (post) =>{
       if(search(post,input.toLowerCase())){
@@ -82,6 +80,7 @@ useEffect(()=>{
                 <Spinner animation="grow" variant="danger" />
                 <Spinner animation="grow" variant="primary" />
                 </Container>
+                <hr/>
                 <Contact/> 
             </div>
             )
@@ -101,11 +100,6 @@ useEffect(()=>{
                   </Fragment>
                   ))}
                   </LazyLoad>
-                </Container>
-                <Container>
-                <Button variant="primary" style={{marginTop:"30px"}} onClick={()=> setCurrPostNo(currPostNo + 10)} size="lg" block>
-                MORE IMAGE!
-                </Button>
                 </Container>
                 <Contact/> 
             </div>

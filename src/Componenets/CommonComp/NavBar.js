@@ -11,7 +11,7 @@ const NavBar = () => {
             <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="/" id="dist1">
             <Typical
-            steps={['TooCoolDogs🐕‍🦺', 1000, 'TooCoolDogs🐕‍🦺', 500]}
+            steps={['TooCoolDogs', 1000, 'TooCoolDogs', 500]}
             loop={Infinity}
             wrapper="p"
             />
